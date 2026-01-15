@@ -58,15 +58,15 @@ body {
 ========================= */
 .hero {
   position: relative;
-  height: 70vh;
-  min-height: 420px;
+  height: 70vh;        /* same for all pages */
+  min-height: 420px;   /* ensures enough space on mobile */
   display: flex;
-  align-items: center;
+  align-items: center; /* vertical centering */
   justify-content: center;
   text-align: center;
   color: #ECF0F1;
-  overflow: hidden;
 }
+
 
 .hero::before {
   content: "";
@@ -95,16 +95,26 @@ body {
   max-width: 900px;
 }
 
+
 .hero-text h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-size: clamp(2.2rem, 4vw, 3.5rem); /* scales for screen size */
   line-height: 1.1;
+  max-width: 900px;   /* prevents super long text lines */
+  margin-bottom: 1rem;
 }
+
 
 .hero-text p {
   font-size: 1.1rem;
-  max-width: 600px;
+  max-width: 600px; /* keeps paragraph narrow, doesn’t push button down */
+  margin-bottom: 1rem;
 }
+
+.hero-text .btn {
+  margin-top: 0; /* flex spacing handles alignment */
+}
+
 
 .btn {
   background: #E67E22;
