@@ -52,6 +52,7 @@ body {
 .hero {
   background: linear-gradient(rgba(44,62,80,0.6), rgba(44,62,80,0.6)),
               url("images/hero-hvac.jpg") center/cover no-repeat;
+              
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -60,9 +61,15 @@ body {
   color: #ECF0F1;
 }
 
+.hero-text {
+    padding-bottom: 80px;
+}
+
+
 .hero-text h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -78,6 +85,7 @@ body {
   border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
+  margin-bottom: ;
 }
 
 /* SERVICES */
@@ -100,7 +108,7 @@ body {
 }
 
 .card {
-  width: 280px;
+  width: 400px;
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -135,6 +143,10 @@ body {
 .contact {
   padding: 60px 20px;
   text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 50px;
 }
 
 /* FOOTER */
